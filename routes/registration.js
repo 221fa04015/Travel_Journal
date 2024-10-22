@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*
 const express = require('express');
 const router = express.Router();
@@ -278,7 +278,7 @@ router.post('/login', async (req, res) => {
         console.error(err);
         res.status(500).render('login', { errorMessage: 'Server error, please try again later' });
     }
-=======
+
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
@@ -338,7 +338,7 @@ router.post('/register_agent', (req, res) => {
     });
 
     res.redirect('/agent_register');  // Redirect after submission
->>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+
 });
 
 module.exports = router;

@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     /* Prevent horizontal scroll */
     height: 100%;
@@ -14,7 +15,8 @@ html, body {
 }
 
 /* Ensure no gap above the header */
-body, header {
+body,
+header {
     margin: 0;
     padding: 0;
 }
@@ -41,33 +43,45 @@ body {
 /* Header styling */
 header {
     padding: 10px;
-    background-color: #fafcff; /* Background color for the header */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    position: sticky; /* Makes the header sticky */
-    top: 0; /* Stick it to the top */
-    z-index: 1000; /* Ensure it stays above other content */
+    background-color: #fafcff;
+    /* Background color for the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    position: sticky;
+    /* Makes the header sticky */
+    top: 0;
+    /* Stick it to the top */
+    z-index: 1000;
+    /* Ensure it stays above other content */
 }
 
 /* Navigation styling */
 nav {
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content:end; /* Space between items */
-    align-items:center; /* Center items vertically */
-    
+    display: flex;
+    /* Flexbox for horizontal layout */
+    justify-content: end;
+    /* Space between items */
+    align-items: center;
+    /* Center items vertically */
+
 }
 
 /* Navigation link styles */
 nav a {
-    text-decoration: none; /* Remove underline */
-    color: black; /* Default link color */
-    margin:15px; /* Space between links */
-    font-size: large; /* Adjust font size */
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Default link color */
+    margin: 15px;
+    /* Space between links */
+    font-size: large;
+    /* Adjust font size */
 }
 
 /* Hover effect for links */
 nav a:hover {
-   
-    text-decoration:wavy;
+
+    text-decoration: wavy;
     background-color: #284562;
     color: white;
     padding: 10px;
@@ -76,33 +90,42 @@ nav a:hover {
 /* Responsive styles */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        align-items: flex-start;
+        /* Align items to the start */
     }
-    
+
     nav a {
-        margin: 5px 0; /* Space for vertical stacking */
+        margin: 5px 0;
+        /* Space for vertical stacking */
     }
 }
 
 /* Logo styling */
 nav img.logo {
-    
-    height: 50px; /* Set a height for the logo */
-    width: auto; /* Maintain the aspect ratio */
-    margin-right: 120px; /* Space between the logo and the navigation links */
-    display: block; /* Ensure the logo behaves as a block element */
+
+    height: 50px;
+    /* Set a height for the logo */
+    width: auto;
+    /* Maintain the aspect ratio */
+    margin-right: 120px;
+    /* Space between the logo and the navigation links */
+    display: block;
+    /* Ensure the logo behaves as a block element */
 }
 
 /* Optional: Add hover effect if desired */
 nav img.logo:hover {
-    opacity: 0.8; /* Slight transparency effect on hover */
+    opacity: 0.8;
+    /* Slight transparency effect on hover */
 }
 
 /* Optional: Responsive logo styling */
 @media (max-width: 768px) {
     nav img.logo {
-        height: 40px; /* Reduce size for smaller screens */
+        height: 40px;
+        /* Reduce size for smaller screens */
     }
 }
 
@@ -588,37 +611,51 @@ button[type="submit"]:hover {
 } */
 
 .contact-section {
-    max-width: 100%; /* Increase width for better readability */
-    height: auto; /* Adjust height as needed; auto allows it to grow with content */
-    min-height: 600px; /* Set a minimum height for a better visual appearance */
-    margin: 50px auto; /* Center the section with some margin */
-    padding: 80px; /* Increased padding inside the section for more space */
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    max-width: 100%;
+    /* Increase width for better readability */
+    height: auto;
+    /* Adjust height as needed; auto allows it to grow with content */
+    min-height: 600px;
+    /* Set a minimum height for a better visual appearance */
+    margin: 50px auto;
+    /* Center the section with some margin */
+    padding: 80px;
+    /* Increased padding inside the section for more space */
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow effect */
 }
 
-.contact-section:hover{
+.contact-section:hover {
     box-shadow: rgb(61, 61, 108);
 }
 
 /* Header Styling */
 .contact-section h2 {
-    text-align: center; /* Center the heading */
-    margin-bottom: 30px; /* Space below the heading */
-    font-size: 28px; /* Font size for the heading */
-    color: #284562; /* Color matching the website theme */
+    text-align: center;
+    /* Center the heading */
+    margin-bottom: 30px;
+    /* Space below the heading */
+    font-size: 28px;
+    /* Font size for the heading */
+    color: #284562;
+    /* Color matching the website theme */
 }
 
 /* Form Styles */
 .contact-form {
-    display: flex; /* Flexbox for layout */
+    display: flex;
+    /* Flexbox for layout */
     position: relative;
     bottom: 10px;
-    flex-direction: column; /* Vertical alignment */
+    flex-direction: column;
+    /* Vertical alignment */
 }
 
-.contact-form:hover{
+.contact-form:hover {
     box-shadow: rgb(61, 61, 108);
 }
 
@@ -626,48 +663,68 @@ button[type="submit"]:hover {
 /* Input and Textarea Styles */
 .contact-form input,
 .contact-form textarea {
-    padding: 15px; /* Increased padding inside input fields */
-    margin-bottom: 20px; /* Space below each field */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 18px; /* Increased font size for inputs */
-    width: 100%; /* Full width of the form */
+    padding: 15px;
+    /* Increased padding inside input fields */
+    margin-bottom: 20px;
+    /* Space below each field */
+    border: 1px solid #ccc;
+    /* Border color */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increased font size for inputs */
+    width: 100%;
+    /* Full width of the form */
 }
 
 /* Textarea specific height */
 .contact-form textarea {
-    min-height: 100px; /* Minimum height for the textarea */
+    min-height: 100px;
+    /* Minimum height for the textarea */
 }
 
 /* Input Focus Effects */
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #284562; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+    border-color: #284562;
+    /* Change border color on focus */
+    outline: none;
+    /* Remove default outline */
 }
 
 /* Button Styles */
 .contact-form button {
-    padding: 15px; /* Increased padding for the button */
-    background-color: #284562; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove default border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 18px; /* Increased font size for button */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    padding: 15px;
+    /* Increased padding for the button */
+    background-color: #284562;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increased font size for button */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 /* Button Hover Effects */
 .contact-form button:hover {
-    background-color: #1d2539; /* Darken background on hover */
+    background-color: #1d2539;
+    /* Darken background on hover */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .contact-section {
-        margin: 20px; /* Reduce margin on smaller screens */
-        padding: 20px; /* Adjust padding */
+        margin: 20px;
+        /* Reduce margin on smaller screens */
+        padding: 20px;
+        /* Adjust padding */
     }
 }
 
@@ -1924,76 +1981,99 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
 }
 
 .footer-column {
-    flex: 1; /* Flexbox allows equal distribution of space */
-    margin: 10px; /* Space between columns */
-    min-width: 200px; /* Minimum width for columns */
+    flex: 1;
+    /* Flexbox allows equal distribution of space */
+    margin: 10px;
+    /* Space between columns */
+    min-width: 200px;
+    /* Minimum width for columns */
 }
 
 h3 {
-    margin-bottom: 10px; /* Space below headings */
+    margin-bottom: 10px;
+    /* Space below headings */
 }
 
 ul {
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes padding from the list */
+    list-style: none;
+    /* Removes bullet points */
+    padding: 0;
+    /* Removes padding from the list */
 }
 
 li {
-    margin: 5px 0; /* Space between list items */
+    margin: 5px 0;
+    /* Space between list items */
 }
 
 a {
-    color: white; /* Link color */
-    text-decoration: none; /* Removes underline from links */
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    /* Removes underline from links */
 }
 
 a:hover {
-    text-decoration: underline; /* Adds underline on hover */
+    text-decoration: underline;
+    /* Adds underline on hover */
 }
 
 .social-icons {
-    display: flex; /* Flexbox for social icons */
-    justify-content: center; /* Centering the icons */
+    display: flex;
+    /* Flexbox for social icons */
+    justify-content: center;
+    /* Centering the icons */
 }
 
 .social-icons a {
-    margin: 0 10px; /* Space between icons */
-    font-size: 1.5rem; /* Increase icon size */
+    margin: 0 10px;
+    /* Space between icons */
+    font-size: 1.5rem;
+    /* Increase icon size */
 }
 
 /* Copyright Styles */
 .copyright {
-    margin-top: 20px; /* Space above copyright text */
+    margin-top: 20px;
+    /* Space above copyright text */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Stack columns vertically */
-        align-items: center; /* Center align columns */
+        flex-direction: column;
+        /* Stack columns vertically */
+        align-items: center;
+        /* Center align columns */
     }
 
     .footer-column {
-        text-align: center; /* Center text in columns */
-        margin-bottom: 15px; /* Space below columns */
+        text-align: center;
+        /* Center text in columns */
+        margin-bottom: 15px;
+        /* Space below columns */
     }
 }
 
 @media (max-width: 480px) {
     .footer-column h3 {
-        font-size: 1.2rem; /* Slightly smaller heading */
+        font-size: 1.2rem;
+        /* Slightly smaller heading */
     }
 
     .footer-column p,
     .footer-column a {
-        font-size: 0.9rem; /* Smaller font for better readability */
+        font-size: 0.9rem;
+        /* Smaller font for better readability */
     }
 
     .social-icons a {
-        font-size: 1.2rem; /* Slightly smaller icons */
+        font-size: 1.2rem;
+        /* Slightly smaller icons */
     }
 }

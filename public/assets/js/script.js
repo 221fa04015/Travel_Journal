@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // const headerContent = `
 
 // <header id="nav-bar">
@@ -35,6 +36,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Form and button selection
 =======
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
 const headerContent = `
 
 <header id="nav-bar">
@@ -71,11 +74,15 @@ document.getElementById('footer').innerHTML = footerContent;
 
 document.addEventListener('DOMContentLoaded', function () {
     // Form selection logic
+<<<<<<< HEAD
 >>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
     const customerForm = document.getElementById('customerForm');
     const agentForm = document.getElementById('agentForm');
     const customerButton = document.getElementById('customerButton');
     const agentButton = document.getElementById('agentButton');
+<<<<<<< HEAD
 <<<<<<< HEAD
     const addPhoneButton = document.getElementById('addPhone');
     const phoneNumbersContainer = document.getElementById('phoneNumbersContainer');
@@ -116,6 +123,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Customer form validation and submission
     const customerFormSubmit = document.getElementById('customerSubmit');
 =======
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
     const phoneNumbersContainer = document.getElementById('phoneNumbersContainer');
     const addPhoneButton = document.getElementById('addPhone');
 
@@ -138,11 +147,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Customer form validation
+<<<<<<< HEAD
 >>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
     if (customerFormSubmit) {
         customerFormSubmit.addEventListener('click', function (event) {
             event.preventDefault();
             clearErrorMessages();
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (validateCustomerForm()) {
                 customerForm.submit(); // Submit the form if valid
@@ -153,6 +166,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Agent form validation and submission
     const agentFormSubmit = document.getElementById('agentSubmit');
 =======
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
 
             // Get customer form values
             const name = document.getElementById('username').value.trim();
@@ -220,15 +235,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Travel Agent form validation
+<<<<<<< HEAD
 >>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
     if (agentFormSubmit) {
         agentFormSubmit.addEventListener('click', function (event) {
             event.preventDefault();
             clearErrorMessages();
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (validateAgentForm()) {
                 agentForm.submit(); // Submit the form if valid
 =======
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
 
             // Get travel agent form values
             const name = document.getElementById('agentName').value.trim();
@@ -260,11 +281,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 // storeAgentData(name, email, password, agentId);
                 document.body.innerHTML += "<p>Travel agent form submitted successfully!</p>";
                 // window.location.href = './dashboard.html';
+<<<<<<< HEAD
 >>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
             }
         });
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Validation for customer form
     function validateCustomerForm() {
@@ -421,6 +446,8 @@ if (password.length !== 6) {
 //        return re.test(email);
 //    }
 =======
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
     // Function to validate email format
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -473,7 +500,10 @@ if (password.length !== 6) {
        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
        return re.test(email);
    }
+<<<<<<< HEAD
 >>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
    
    // Store data temporarily using sessionStorage
 //    function storeUserData(name, email, password, phone, city) {
@@ -508,6 +538,7 @@ if (password.length !== 6) {
    
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // profile
 
@@ -568,6 +599,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 =======
+=======
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144
 
 
   
@@ -629,5 +662,9 @@ $(document).ready(function() {
       window.location.href = '/agent_register';
     });
   });
+<<<<<<< HEAD
   
 >>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+=======
+  
+>>>>>>> cd9229d73a1034001cfcd39cd3223848458f6144

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // const mongoose = require("mongoose");
 
 // mongoose.connect("mongodb://localhost:27017/traveljornal", {
@@ -74,7 +74,6 @@
 //   Customer,
 //   Agent
 // };
-=======
 const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost:27017/traveljornal", {
@@ -149,4 +148,5 @@ module.exports = {
   Customer,
   Agent
 };
->>>>>>> aa36d4b493bc5aecd06e257bc9614cfc2a753e76
+
+
